@@ -1,0 +1,111 @@
+.services {
+    padding-top: 120px;
+
+    &__body-one {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    &__body-two {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-top: 40px;
+    }
+    
+    &__body-three {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    &__title {
+        color: $lightblue-color;
+        font-family: 'Harabara';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $black-color;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__img {
+        margin-left: 24px;
+        padding-left: 13px;
+        padding-bottom: 38px;
+        cursor: pointer;
+    }
+
+    &__img-two {
+        margin-right: 28px;
+        padding-right: 25px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:991px) {
+    .services {
+        padding-top: 100px;
+        
+        &__body-one {
+            flex-direction: column;
+        }
+
+        &__body-two {
+            flex-direction: column;
+        }
+        
+        &__body-three {
+            flex-direction: column;
+        }
+        
+        &__title {
+            font-size: 20px;
+        }
+    
+        &__img {
+            margin-left: 0;
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        
+        &__img-two {
+           margin-right: 0;
+           padding-right: 0;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .services {
+        padding-top: 80px;
+     
+        &__img img {
+            width: 315px;
+        }
+        
+        &__img-two img {
+            width: 315px;
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .services {
+
+        &__body-one {
+            margin-top: 40px;
+        }
+    }
+}

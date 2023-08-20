@@ -1,0 +1,35 @@
+body {
+  font-family: "Montserrat", sans-serif, "Harabara";
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-technologeis {
+  max-width: 890px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-services {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-looking {
+  max-width: 1074px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.container-contacts {
+  max-width: 1199px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=commons.css.map */

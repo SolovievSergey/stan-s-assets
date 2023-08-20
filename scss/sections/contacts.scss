@@ -1,0 +1,245 @@
+.contacts {
+    padding-bottom: 170px;
+  
+   &__title {
+        color: $darkblue-color;
+        font-family: 'Harabara';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__text {
+        color: $black-color;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        color: $black-color;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__body {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__inform {
+        padding-top: 50px;
+    }
+    
+    &__location {
+        display: flex;
+        margin-bottom: 24px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__adress {
+        color: $black-color;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-left: 20px;
+    }
+
+    &__blank {
+        width: 625px;
+        height: 464px;
+        position: relative;
+    }
+
+    &__vector-two {
+        position: absolute;
+        right: 0;
+    }
+
+    &__vector-three {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+    }
+
+    &__info {
+        position: absolute;
+        top: 55px;
+        left: 110px;
+        width: 420px;
+        height: 400px;
+        border-radius: 6px;
+        background: $white-color;
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+        padding: 50px 40px 70px;
+    }
+
+    &__name {
+        border-radius: 4px;
+        border: 1px solid $lightwhite-color;
+        background: $white-color;
+        padding: 10px 16px 10px 16px;
+        width: 340px;
+    }
+
+    &__email {
+        border-radius: 4px;
+        border: 1px solid $lightwhite-color;
+        background: $white-color;
+        padding: 10px 16px 10px 16px;
+        margin-top: 20px;
+        width: 340px;
+    }
+    
+    &__textarea {
+        border-radius: 4px;
+        border: 1px solid $lightwhite-color;
+        background: $white-color;
+        padding: 10px 16px 50px 16px;
+        margin-top: 20px;
+        width: 340px;
+    }
+
+    &__btn {
+        color: $white-color;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 6px;
+        background: $green-color;
+        padding: 13px 40px;
+        width: 340px;
+        margin-top: 30px;
+        transition: .2s;
+        
+        &:hover {
+            background-color: $darkgreen-color;
+        }
+    }
+}
+
+@media(max-width:1126px) {
+    .contacts {
+        padding-bottom: 100px;
+        
+        &__title {
+            font-size: 30px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__body {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width:1100px) {
+    .contacts {
+       padding-bottom: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .contacts {
+        
+        &__vector-one {
+           width: 70px;
+           display: none;
+        }
+        
+        &__vector-two {
+            width: 70px;
+            right: 230px;
+            display: none;
+        }
+        
+        &__vector-three {
+            width: 70px;
+            bottom: 200px;
+            left: 100px;
+            display: none;
+        }
+    
+        &__info {
+           max-width: 380px;
+           padding: 30px 20px 40px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .contacts {
+
+        &__title {
+            font-size: 22px;
+        }
+        
+        &__text {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        &__body {
+            margin-top: 32px;
+        }
+    
+        &__inform {
+            padding-top: 0;
+        }
+    
+        &__info {
+            padding: 10px;
+            max-width: 300px;
+            height: 340px;
+            left: 160px;
+        }
+    
+        &__name {
+            width: 280px;
+        }
+    
+        &__email {
+            width: 280px;
+        }
+    
+        &__textarea {
+            width: 280px;
+        }
+    
+        &__btn {
+            width: 280px;
+        }
+    
+        &__adress {
+            font-size: 18px;
+        }
+    }
+}
