@@ -1,1 +1,1 @@
-# stan-s-assets
+# stan-s-assets // Очень интересный дизайн
